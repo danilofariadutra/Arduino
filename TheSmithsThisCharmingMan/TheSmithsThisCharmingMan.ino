@@ -15,11 +15,13 @@ float fusa = 68.181;
 float semiFusa = 34.090;
 
 void setup() {
+   
   pinMode(buzzer, OUTPUT);
   Serial.begin(9600);
 }
 
 void intro() {
+   
   tone(buzzer, NOTE_CS6, semiColcheia);
   delay(semiColcheia);
   tone(buzzer, NOTE_CS6, colcheia);
@@ -64,6 +66,7 @@ void intro() {
 }
 
 void versoParteUm() {
+   
   tone(buzzer, NOTE_FS5, colcheia);
   delay(colcheia);
   tone(buzzer, NOTE_FS5, semiColcheia);
@@ -108,6 +111,7 @@ void versoParteUm() {
 }
 
 void fimIntro() {
+   
   tone(buzzer, NOTE_GS5, semiColcheia);
   delay(semiColcheia);
   tone(buzzer, NOTE_A5, colcheia);
