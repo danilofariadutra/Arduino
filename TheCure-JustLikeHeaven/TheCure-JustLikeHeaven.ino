@@ -6,13 +6,14 @@
 #include <Notas.h>
 #define buzzer 10
 
-int semiBreve = 2000;
-int minima = 1000;
-int seminima = 500;
-int colcheia = 250;
-int semiColcheia = 125;
-float fusa = 62.5;
-float semiFusa = 31.25;
+float bpm = 110;
+float seminima = (60 / bpm) * 1000;
+float semiBreve = seminima * 4;
+float minima = seminima * 2;
+float colcheia = seminima / 2;
+float semiColcheia = seminima / 4;
+float fusa = seminima / 8;
+float semiFusa = seminima / 16;
 
 void setup() {
 
