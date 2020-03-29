@@ -6,22 +6,21 @@
 #include <Notas.h>
 #define buzzer 10
 
-float semiBreve = 2181.816;
-float minima = 1090.908;
-float seminima = 545.454;
-float colcheia = 272.727;
-float semiColcheia = 136.363;
-float fusa = 68.181;
-float semiFusa = 34.090;
+float bpm = 110;
+float seminima = (60 / bpm) *1000;
+float semiBreve = seminima * 4;
+float minima = seminima * 2;
+float colcheia = seminima / 2;
+float semiColcheia = seminima / 4;
+float fusa = seminima / 8;
+float semiFusa = seminima / 16;
 
 void setup() {
-   
   pinMode(buzzer, OUTPUT);
   Serial.begin(9600);
 }
 
 void intro() {
-   
   tone(buzzer, NOTE_CS6, semiColcheia);
   delay(semiColcheia);
   tone(buzzer, NOTE_CS6, colcheia);
@@ -66,7 +65,6 @@ void intro() {
 }
 
 void versoParteUm() {
-   
   tone(buzzer, NOTE_FS5, colcheia);
   delay(colcheia);
   tone(buzzer, NOTE_FS5, semiColcheia);
@@ -111,7 +109,6 @@ void versoParteUm() {
 }
 
 void fimIntro() {
-   
   tone(buzzer, NOTE_GS5, semiColcheia);
   delay(semiColcheia);
   tone(buzzer, NOTE_A5, colcheia);
@@ -289,14 +286,11 @@ void finalRefrao() {
   delay(seminima + colcheia + semiColcheia);
 }
 
-
-
 void loop() {
 
   intro();
   versoParteUm();
   fimIntro();
-
 
   for (int c = 0; c < 4; c ++) {
     versoParteUm();
