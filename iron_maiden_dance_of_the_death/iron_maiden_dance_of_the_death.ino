@@ -15,6 +15,7 @@ void setup() {
   pinMode(base, OUTPUT);
   Serial.begin(9600);
 }
+
 void loop() {
   /* Solo 
   tone(base, NOTE_E7, minima + semiMinima);
