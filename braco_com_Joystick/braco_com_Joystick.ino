@@ -1,8 +1,3 @@
-﻿/* Projeto: Braço Robotico controlado por Joystick;
- * Autor: Danilo Dutra;
- * Projeto pode ser modificado, para utilizar Bluetooth e Frequência Rádio também, vai da sua necessidade e uso.
- */
-
 #include <Servo.h>
 
 #define base 8 // Porta Digital 8
