@@ -1,4 +1,4 @@
-﻿/* Projeto: Adivinha um número entre 0 e 1000;
+/* Projeto: Adivinha um número entre 0 e 1000;
   Autor: Danilo Dutra
 */
 
