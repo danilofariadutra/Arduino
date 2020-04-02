@@ -14,6 +14,10 @@ O valor máximo pode ser alterado para mais ou para menos que 1000. Fique a vont
 
 ### Existe uma [outra versão](https://github.com/danilofariadutra/Arduino/tree/master/Adivinha_Numero) que disponibilizei via Monitor Serial, caso você não tenha um LCD Display
 
+### Deixei também uma esquemática no Fritzing para ficar visualmente mais fácil de montar.
+
+![](img/Arduino_Uno_I2C_LCD.png)
+
 ![](img/img1.png)
 
 ![](img/img2.png)
