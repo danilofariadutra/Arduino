@@ -2,13 +2,12 @@
 #include <LiquidCrystal_PCF8574.h>
 LiquidCrystal_PCF8574 lcd(0x27);
 
-#define buzzer 10
 #define btSim 6
 #define btNao 7
 
-char res = 'V';
 float num, inicial = 0, ultimo = 1000;
-bool btS = false, btN = false;
+float num, inicial = 0, ultimo = 1000; // inicial = número inicial, ultimo = o número máximo
+bool btS = false, btN = false; // Da um valor inicial para que o while possa inicializar;
 
 void setup() {
   Serial.begin(9600);
