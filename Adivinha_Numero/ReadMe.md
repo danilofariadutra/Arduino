@@ -1,12 +1,7 @@
-# Versão Adivinha Número - Via Monitor Serial
-
-
-
+# Versão Adivinha Número
 
 ### Você escolhe um valor entre 0 e 1000, e o Arduino tenta adivinha-lo.
 
+[Versão com LCD Display](https://github.com/danilofariadutra/Arduino/tree/master/Adivinha_Numero/Adivinha_Numero_com_LCD) utilizando-se de um LCD Display e Pushbuttons.
 
-
-## Existe uma [Versão](https://github.com/danilofariadutra/Arduino/tree/master/Adivinha_Numero_com_LCD) utilizando-se de um LCD Display e Pushbuttons.
-
-[![Watch the video](https://raw.githubusercontent.com/danilofariadutra/Arduino/master/Adivinha_Numero/img/Screen.png)](https://www.youtube.com/watch?v=SuOyyTBPTas)
+[Versão em comunicação Serial](https://github.com/danilofariadutra/Arduino/tree/master/Adivinha_Numero/Adivinha_Numero_via_Serial) utilizando-se da comunicação Serial, via Monitor Serial da IDE.
